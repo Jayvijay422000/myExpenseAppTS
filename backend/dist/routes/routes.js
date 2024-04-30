@@ -30,11 +30,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const expenseController = __importStar(require("../controllers/controller"));
 const router = express_1.default.Router();
-router.post('/expenses', expenseController.createExpense);
 router.get('/expenses', expenseController.getAllExpenses);
 router.get('/expenses/:id', expenseController.getExpenseById);
-router.put('/expenses/:id', expenseController.updateExpense);
-router.delete('/expenses/:id', expenseController.deleteExpense);
 router.get('/total-expense', expenseController.getTotalExpense);
 exports.default = router;
 //# sourceMappingURL=routes.js.map
