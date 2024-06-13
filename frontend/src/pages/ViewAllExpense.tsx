@@ -20,7 +20,7 @@ const ViewAllExpense: FC = () => {
     const allExpense = async () => {
       try {
         setIsLoading(true);
-        const res = await fetch('http://localhost:3000/api/ethereum/expenses', {
+        const res = await fetch('https://myexpenseapptsbackend.onrender.com/api/ethereum/expenses', {
           method: 'GET',
           headers: {
             'Accept': 'application/json'
