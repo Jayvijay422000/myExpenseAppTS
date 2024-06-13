@@ -44,7 +44,7 @@ const UpdateExpense: FC<UpdateExpenseProps> = ({ state }) => {
   
     try {
       const expenseID = (document.querySelector('#expenseId') as HTMLInputElement).value;
-      const res = await fetch(`http://localhost:3000/api/ethereum/expenses/${expenseID}`, {
+      const res = await fetch(`https://myexpenseapptsbackend.onrender.com/api/ethereum/expenses/${expenseID}`, {
         method: 'GET',
         headers: {
           'content-type': 'application/json',
