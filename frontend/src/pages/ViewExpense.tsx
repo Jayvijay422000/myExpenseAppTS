@@ -27,7 +27,7 @@ const ViewExpense: FC = () => {
       event.preventDefault();
       const expenseID = document.querySelector<HTMLInputElement>('#expenseID')?.value;
       setIsLoading(true)
-      const res = await fetch(`http://localhost:3000/api/ethereum/expenses/${expenseID}`, {
+      const res = await fetch(`https://myexpenseapptsbackend.onrender.com/api/ethereum/expenses/${expenseID}`, {
         method: 'GET',
         headers: {
           'content-type': 'application/json',
